@@ -15,7 +15,7 @@ export const ExperienceSection = () => {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#F5F5F5]">Professional Experience</h2>
             <div className="h-1 w-20 bg-gradient-to-r from-[#00FFFF] to-[#30193D] rounded-full mx-auto"></div>
             <p className="max-w-[900px] text-[#D8BFD8] md:text-xl">
-              My journey as an AI developer and the professional experience I've gained along the way
+              My journey as an AI developer and the professional experience I&apos;ve gained along the way
             </p>
           </div>
         </div>

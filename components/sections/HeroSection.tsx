@@ -115,26 +115,26 @@ export const HeroSection = () => {
                   </p>
                   <p className="pl-4">
                     <span className="text-[#D8BFD8]">name:</span>{" "}
-                    <span className="text-amber-400">"Zaheer Ahmed"</span>,
+                    <span className="text-amber-400">&quot;Zaheer Ahmed&quot;</span>,
                   </p>
                   <p className="pl-4">
                     <span className="text-[#D8BFD8]">specialization:</span>{" "}
-                    <span className="text-amber-400">"Generative AI Engineering"</span>,
+                    <span className="text-amber-400">&quot;Generative AI Engineering&quot;</span>,
                   </p>
                   <p className="pl-4">
                     <span className="text-[#D8BFD8]">focus:</span> [
                   </p>
                   <p className="pl-8">
-                    <span className="text-amber-400">"Multi Agents Systems"</span>
+                    <span className="text-amber-400">&quot;Multi Agents Systems&quot;</span>
                   </p>
                   <p className="pl-8">
-                    <span className="text-amber-400">"Agentic AI Systems"</span>
+                    <span className="text-amber-400">&quot;Agentic AI Systems&quot;</span>
                   </p>
                   <p className="pl-8">
-                    <span className="text-amber-400">"LLMs & RAG Pipelines"</span>,
+                    <span className="text-amber-400">&quot;LLMs & RAG Pipelines&quot;</span>,
                   </p>
                   <p className="pl-8">
-                    <span className="text-amber-400">"Cloud AI Solutions"</span>,
+                    <span className="text-amber-400">&quot;Cloud AI Solutions&quot;</span>,
                   </p>
                   <p className="pl-4">],</p>
                   <p className="pl-4">

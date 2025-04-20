@@ -35,13 +35,13 @@ export const EducationSection = () => {
                 <div>
                   <div className="flex justify-between items-start ">
                     <h4 className="text-lg font-bold mb-1 text-[#F5F5F5] group-hover:text-[#00FFFF] transition-colors ">
-                      Bachelor's Degree in Artificial Intelligence
+                      Bachelor&apos;s Degree in Artificial Intelligence
                     </h4>
                     <span className="bg-[#30193D]/30 text-[#D8BFD8] text-xs px-2 py-1 rounded">2022 - 2026</span>
                   </div>
                   <p className="text-[#00FFFF] text-sm mb-3">Arid Agriculture University, Rawalpindi</p>
                   <p className="text-[#E6E6FA]">
-                    Currently pursuing a bachelor's degree with focus on artificial intelligence, machine learning, and advanced computing systems.
+                    Currently pursuing a bachelor&apos;s degree with focus on artificial intelligence, machine learning, and advanced computing systems.
                   </p>
                   <ul className="space-y-1 text-[#D8BFD8] list-disc pl-5 mt-3 text-sm">
                     <li>Focus on deep learning architectures and natural language processing</li>

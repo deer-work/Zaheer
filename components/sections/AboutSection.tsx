@@ -39,7 +39,7 @@ export const AboutSection = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-[#F5F5F5]">Who I Am</h3>
               <p className="text-[#E6E6FA] leading-relaxed">
-                I'm Zaheer Ahmed, an Agentic AI Developer and Cloud Generative AI Engineer with a passion for creating intelligent systems that solve real-world problems. With expertise in LLMs, RAG systems, and agentic AI development, I build solutions that leverage the power of cutting-edge AI technologies.
+                I&apos;m Zaheer Ahmed, an Agentic AI Developer and Cloud Generative AI Engineer with a passion for creating intelligent systems that solve real-world problems. With expertise in LLMs, RAG systems, and agentic AI development, I build solutions that leverage the power of cutting-edge AI technologies.
               </p>
               <p className="text-[#E6E6FA] leading-relaxed">
                 My journey in AI development started with a fascination for how machines can learn and adapt. This curiosity led me to pursue education in Artificial Intelligence and gain hands-on experience working on diverse AI projects.

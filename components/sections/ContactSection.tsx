@@ -82,7 +82,7 @@ export const ContactSection = () => {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#F5F5F5]">Get In Touch</h2>
               <div className="h-1 w-20 bg-gradient-to-r from-[#00FFFF] to-[#30193D] rounded-full"></div>
               <p className="max-w-[600px] text-[#D8BFD8] md:text-xl">
-                I'm available for consulting, project work, and long-term engagements. Let's discuss how I can
+                I&apos;m available for consulting, project work, and long-term engagements. Let&apos;s discuss how I can
                 contribute to your AI and cloud development needs.
               </p>
             </div>

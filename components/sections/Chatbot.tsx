@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import {
   Send,
   Minimize2,
@@ -61,60 +61,12 @@ export default function ProfessionalChatbot() {
     }
   };
 
-  const handleQuickAction = (action: string) => {
-    setMessages([
-      ...messages,
-      { text: `You selected: ${action}`, sender: "bot" },
-    ]);
-  };
-
   const [isLoading, setIsLoading] = useState(false);
   const [rateLimitCountdown, setRateLimitCountdown] = useState<number | null>(null);
   const [rateLimitReason, setRateLimitReason] = useState<string | null>(null);
 
-  // Update useEffect for rate limit countdown to include automatic server checks
-  useEffect(() => {
-    if (rateLimitCountdown && rateLimitCountdown > 0) {
-      // For very low countdown values, check more frequently
-      const interval = setInterval(() => {
-        setRateLimitCountdown(prev => {
-          if (prev === null || prev <= 1) {
-            // Reset the rate limit state when countdown reaches zero
-            return null;
-          }
-          return prev - 1;
-        });
-
-        // When countdown gets low, automatically check server status
-        if (rateLimitCountdown <= 6 && rateLimitCountdown > 0) {
-          // Schedule a server check near the end of the countdown
-          handleTestRateLimit(true); // true for silent mode
-        }
-      }, 1000);
-      
-      return () => clearInterval(interval);
-    } else if (rateLimitCountdown === 0) {
-      // Ensure we reset to null if we somehow end up at exactly zero
-      setRateLimitCountdown(null);
-      setRateLimitReason(null);
-    }
-  }, [rateLimitCountdown]);
-
-  // Add back the reset rate limit function
-  const resetRateLimit = () => {
-    // Only allow reset if the countdown is very low (likely expired on server)
-    // or if we're in a potentially erroneous state
-    if (rateLimitCountdown && rateLimitCountdown <= 5) {
-      setRateLimitCountdown(null);
-      setRateLimitReason(null);
-    } else {
-      // If the rate limit is still high, test with a new request instead of just clearing
-      handleTestRateLimit(false); // explicit non-silent mode
-    }
-  };
-
-  // Update the test rate limit function to support silent mode
-  const handleTestRateLimit = async (silent = false) => {
+  // Update the test rate limit function to support silent mode, wrapped in useCallback
+  const handleTestRateLimit = useCallback(async (silent = false) => {
     try {
       // Only update UI if not in silent mode
       if (!silent) {
@@ -149,7 +101,7 @@ export default function ProfessionalChatbot() {
                 setRateLimitReason('Rate limit still active');
               }
             }
-          } catch (e) {
+          } catch {
             // If parsing fails, only update message if not in silent mode
             if (!silent) {
               setRateLimitReason('Rate limit still active');
@@ -163,6 +115,47 @@ export default function ProfessionalChatbot() {
       if (!silent) {
         setRateLimitReason('Connection error. Try again.');
       }
+    }
+  }, [rateLimitCountdown]);
+
+  // Update useEffect for rate limit countdown to include automatic server checks
+  useEffect(() => {
+    if (rateLimitCountdown && rateLimitCountdown > 0) {
+      // For very low countdown values, check more frequently
+      const interval = setInterval(() => {
+        setRateLimitCountdown(prev => {
+          if (prev === null || prev <= 1) {
+            // Reset the rate limit state when countdown reaches zero
+            return null;
+          }
+          return prev - 1;
+        });
+
+        // When countdown gets low, automatically check server status
+        if (rateLimitCountdown <= 6 && rateLimitCountdown > 0) {
+          // Schedule a server check near the end of the countdown
+          handleTestRateLimit(true); // true for silent mode
+        }
+      }, 1000);
+      
+      return () => clearInterval(interval);
+    } else if (rateLimitCountdown === 0) {
+      // Ensure we reset to null if we somehow end up at exactly zero
+      setRateLimitCountdown(null);
+      setRateLimitReason(null);
+    }
+  }, [rateLimitCountdown, handleTestRateLimit]);
+
+  // Add back the reset rate limit function
+  const resetRateLimit = () => {
+    // Only allow reset if the countdown is very low (likely expired on server)
+    // or if we're in a potentially erroneous state
+    if (rateLimitCountdown && rateLimitCountdown <= 5) {
+      setRateLimitCountdown(null);
+      setRateLimitReason(null);
+    } else {
+      // If the rate limit is still high, test with a new request instead of just clearing
+      handleTestRateLimit(false); // explicit non-silent mode
     }
   };
 
@@ -208,7 +201,7 @@ export default function ProfessionalChatbot() {
             }
             
             throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
-          } catch (jsonError) {
+          } catch {
             // If not JSON or other parsing error
             throw new Error(`HTTP error! status: ${response.status}`);
           }
@@ -341,7 +334,7 @@ export default function ProfessionalChatbot() {
             </div>
             {rateLimitReason?.includes('Hourly') && (
               <div className="mt-1 text-[#D8BFD8]/50 text-xs">
-                You've reached your hourly message limit. Consider reviewing previous responses or trying again later.
+                You&apos;ve reached your hourly message limit. Consider reviewing previous responses or trying again later.
               </div>
             )}
             {rateLimitCountdown <= 5 && (

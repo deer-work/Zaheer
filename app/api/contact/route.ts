@@ -27,7 +27,7 @@ ${message}
     }
 
     return NextResponse.json({ success: true, messageId: data?.id });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }

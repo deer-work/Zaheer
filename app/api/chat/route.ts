@@ -4,11 +4,10 @@ import { ChatOpenAI } from '@langchain/openai';
 import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
 import { MemoryVectorStore } from 'langchain/vectorstores/memory';
 import { OpenAIEmbeddings } from '@langchain/openai';
-import { ChatPromptTemplate, MessagesPlaceholder } from '@langchain/core/prompts';
+import { ChatPromptTemplate } from '@langchain/core/prompts';
 import { Document } from '@langchain/core/documents';
 import { createRetrievalChain } from 'langchain/chains/retrieval';
 import { createStuffDocumentsChain } from 'langchain/chains/combine_documents';
-import { BaseMessage, HumanMessage, SystemMessage } from '@langchain/core/messages';
 import { LRUCache } from 'lru-cache';
 
 // Rate limiting implementation
@@ -271,7 +270,7 @@ Let's connect to bring innovative AI-powered solutions to life!
 
 // Initialize the vector store and retriever - this happens once when the API route is first loaded
 let vectorStore: MemoryVectorStore;
-let retriever: any;
+let retriever: ReturnType<MemoryVectorStore['asRetriever']>;
 let initialized = false;
 let initializing = false;
 
