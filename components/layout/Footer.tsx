@@ -12,13 +12,20 @@ export const Footer = () => {
                 <CircuitBoard className="h-6 w-6 text-[#00FFFF] transition-transform duration-300 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-[#00FFFF]/20 rounded-full blur-md -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <span className="text-lg font-bold tracking-tight text-[#F5F5F5]">Zaheer Ahmed</span>
+              <span className="text-lg font-bold tracking-tight text-[#F5F5F5]">
+                Zaheer Ahmed
+              </span>
             </div>
             <p className="text-[#D8BFD8] max-w-[400px]">
-              Agentic AI Developer & Cloud Generative AI Engineer specializing in LLMs, RAG systems, and scalable backend solutions.
+              Agentic AI Developer & Cloud Generative AI Engineer specializing
+              in LLMs, RAG systems, and scalable backend solutions.
             </p>
             <div className="flex items-center gap-4">
-              <Link href="https://www.linkedin.com/in/zaheerahmedabbasi" target="_blank" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+              <Link
+                href="https://www.linkedin.com/in/zaheerahmedabbasi"
+                target="_blank"
+                className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -36,7 +43,11 @@ export const Footer = () => {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </Link>
-              <Link href="https://github.com/NxtGen-Dev-ZAH" target="_blank" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+              <Link
+                href="https://github.com/NxtGen-Dev-ZAH"
+                target="_blank"
+                className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -53,7 +64,11 @@ export const Footer = () => {
                   <path d="M9 18c-4.51 2-5-2-7-2"></path>
                 </svg>
               </Link>
-              <Link href="https://www.instagram.com/zaheer_ahmed556/" target="_blank" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+              <Link
+                href="https://www.instagram.com/zaheer_ahmed556/"
+                target="_blank"
+                className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -71,72 +86,117 @@ export const Footer = () => {
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                 </svg>
               </Link>
+              <Link
+                href="https://www.facebook.com/zaheer.ahmadabbasi.77/"
+                target="_blank"
+                className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-5 w-5"
+                >
+                  <path d="M18 2H6a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4z"></path>
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </Link>
             </div>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
             <div className="space-y-3">
-              <h4 className="text-sm font-bold uppercase tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-[#D8BFD8] to-[#E6E6FA]">Navigation</h4>
+              <h4 className="text-sm font-bold uppercase tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-[#D8BFD8] to-[#E6E6FA]">
+                Navigation
+              </h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#about" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+                  <Link
+                    href="#about"
+                    className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
+                  >
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="#skills" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+                  <Link
+                    href="#skills"
+                    className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
+                  >
                     Skills
                   </Link>
                 </li>
                 <li>
-                  <Link href="#projects" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+                  <Link
+                    href="#projects"
+                    className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
+                  >
                     Projects
                   </Link>
                 </li>
                 <li>
-                  <Link href="#experience" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+                  <Link
+                    href="#experience"
+                    className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
+                  >
                     Experience
                   </Link>
                 </li>
                 <li>
-                  <Link href="#certifications" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+                  <Link
+                    href="#certifications"
+                    className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
+                  >
                     Certifications
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+                  <Link
+                    href="#contact"
+                    className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
+                  >
                     Contact
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="space-y-3">
-              <h4 className="text-sm font-bold uppercase tracking-wider  bg-clip-text text-transparent bg-gradient-to-r from-[#D8BFD8] to-[#E6E6FA]">Services</h4>
+              <h4 className="text-sm font-bold uppercase tracking-wider  bg-clip-text text-transparent bg-gradient-to-r from-[#D8BFD8] to-[#E6E6FA]">
+                Services
+              </h4>
               <ul className="space-y-2">
-                <li>    
-                  <p   className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+                <li>
+                  <p className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
                     Generative AI
                   </p>
                 </li>
                 <li>
-                  <p   className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+                  <p className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
                     Cloud Solutions
                   </p>
                 </li>
                 <li>
-                  <p   className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+                  <p className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
                     AI Agents
                   </p>
                 </li>
                 <li>
-                  <p   className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+                  <p className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
                     Consulting
                   </p>
                 </li>
               </ul>
             </div>
             <div className="space-y-3">
-              <h4 className="text-sm font-bold uppercase tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-[#D8BFD8] to-[#E6E6FA]">Contact</h4>
+              <h4 className="text-sm font-bold uppercase tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-[#D8BFD8] to-[#E6E6FA]">
+                Contact
+              </h4>
               <ul className="space-y-2">
                 <li className="text-[#D8BFD8]">dev.zaheer.ahmad@gmail.com</li>
                 <li className="text-[#D8BFD8]">Islamabad, Pakistan</li>
@@ -152,4 +212,4 @@ export const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;
