@@ -142,7 +142,7 @@ Islamabad, Pakistan
 Email: dev.zaheer.ahmad@gmail.com
 LinkedIn: linkedin.com/in/zaheerahmedabbasi
 GitHub: https://github.com/NxtGen-Dev-ZAH
-Instagram: https://www.instagram.com/zaheer_ahmed556/
+Instagram: https://www.instagram.com/zaheer_aahmedd/
 Facebook: https://www.facebook.com/zaheer.ahmadabbasi.77
 
 ## Profile
