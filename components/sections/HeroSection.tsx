@@ -76,7 +76,7 @@ export const HeroSection = () => {
                   <path d="M9 18c-4.51 2-5-2-7-2"></path>
                 </svg>
               </Link>
-              <Link href="https://www.instagram.com/zaheer_ahmed556/" target="_blank" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+              <Link href="https://www.instagram.com/zaheer_aahmedd/" target="_blank" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
