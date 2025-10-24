@@ -65,7 +65,7 @@ export const Footer = () => {
                 </svg>
               </Link>
               <Link
-                href="https://www.instagram.com/zaheer_ahmed556/"
+                href="https://www.instagram.com/zaheer_aahmedd/"
                 target="_blank"
                 className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
               >
