@@ -44,7 +44,7 @@ export const Footer = () => {
                 </svg>
               </Link>
               <Link
-                href="https://github.com/NxtGen-Dev-ZAH"
+                href="https://github.com/zaheer-ahmed-git"
                 target="_blank"
                 className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors"
               >
