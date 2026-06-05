@@ -59,7 +59,7 @@ export const HeroSection = () => {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </Link>
-              <Link href="https://github.com/NxtGen-Dev-ZAH" target="_blank" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
+              <Link href="https://github.com/zaheer-ahmed-git" target="_blank" className="text-[#D8BFD8] hover:text-[#00FFFF] transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
